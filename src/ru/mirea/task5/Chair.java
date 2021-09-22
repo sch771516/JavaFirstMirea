@@ -1,0 +1,18 @@
+package ru.mirea.task5;
+
+public class Chair extends Furniture
+{
+    private int countOfAcces;
+
+    public Chair(String title, String color, int countOfAcces)
+    {
+        super(title,color);
+        this.countOfAcces = countOfAcces;
+    }
+
+    public void showInfo()
+    {
+        super.showInfo();
+        System.out.println("\", Count of accessories- "+countOfAcces+".");
+    }
+}
