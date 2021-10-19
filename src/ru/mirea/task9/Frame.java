@@ -1,42 +1,14 @@
 package ru.mirea.task9;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Frame extends JFrame
 {
-/*
-    private JButton button = new JButton("Press me");
-    private JLabel label = new JLabel("Input: ");
-
-    public Frame()
-    {
-        super("My App");//запускаем конструктор jframe
-        this.setBounds(100,100,250,100);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        Container container = this.getContentPane();
-        container.setLayout(new GridLayout(3,2,2,2));
-        container.add(label);
-
-        button.addActionListener(new ButtonEvent());
-        container.add(button);
-    }
- class ButtonEvent implements ActionListener
- {
-     //public void setterScore(ActionEvent f){}
-
-     @Override
-     public void actionPerformed(ActionEvent e)
-     {
-
-     }
-}
-*/
-
-
     public static void main(String[] args)
     {
         final int[] sc1 = {0};
@@ -84,7 +56,7 @@ public class Frame extends JFrame
         //Анонимные классы
         button1.addActionListener(new ActionListener()
         {
-            public int score1 = 0;
+            int score1 = 0;
             @Override
             public void actionPerformed(ActionEvent e)
             {
@@ -95,7 +67,8 @@ public class Frame extends JFrame
             }
         });
         button2.addActionListener(new ActionListener()
-        { int score2 = 0;
+        {
+            int score2 = 0;
             @Override
             public void actionPerformed(ActionEvent e)
             {
@@ -123,7 +96,5 @@ public class Frame extends JFrame
                 }
             }
         });
-
-
     }
 }
